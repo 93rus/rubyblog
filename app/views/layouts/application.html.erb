@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Purrpurr</title>
+    <title>HR Search Russia</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,73 @@
   </head>
 
   <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">HR Search Russia</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Главная </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Ищу CEO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Ищу CTO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Ищу PM</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Ищу Developer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Ищу QA</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Ещё специалисты
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Analitic</a>
+          <a class="dropdown-item" href="#">System admin</a>
+          <a class="dropdown-item" href="#">DevOps</a>
+           <a class="dropdown-item" href="#">HR</a>
+        </div>
+      </li>
+      <!--<li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>-->
+    </ul>
+    <div>
+      <button type="button" class="btn btn-success">Вход</button>
+      <button type="button" class="btn btn-primary">Регистрация</button>
+    </div>
+   
+  </div>
+  
+</nav>
+<!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+
+        <!-- Search Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Поиск</h5>
+          <div class="card-body">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for...">
+              <span class="input-group-append">
+                <button class="btn btn-secondary" type="button">Повезет!</button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     <%= yield %>
+</div>
   </body>
 </html>
